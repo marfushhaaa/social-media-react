@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { MongoClient, ServerApiVersion } = require('mongodb');
+//const { MongoClient, ServerApiVersion } = require('mongodb');
 
 const UserSchema = new mongoose.Schema({
   username:{
@@ -36,10 +36,10 @@ const UserSchema = new mongoose.Schema({
     type: Array,
     default:[],
   },
-  isAdmin:{
-    type: Bollean,
-    default: false,
-  },
+//   isAdmin:{
+// //    type: Bollean,
+//     default: false,
+//   },
 },
 {timestamps:true}
 );
