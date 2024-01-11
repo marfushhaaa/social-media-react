@@ -51,11 +51,11 @@ const UserSchema = new mongoose.Schema({
   city:{
     type: Number,
     enum: [1,2,3],
-  }
-//   isAdmin:{
-// //    type: Bollean,
-//     default: false,
-//   },
+  },
+  isAdmin:{
+    type: Boolean,
+    default: false,
+   },
 },
 {timestamps:true}
 );
